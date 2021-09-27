@@ -2408,6 +2408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e899a7a1d13de41905292e3ca0f687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookSensitivity: 1
 --- !u!143 &1566487424
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2453,7 +2454,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ae469d71973b44a9a8d90b8119d8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 5
+  playerMoveSpeed: 5
+  gravityDownForce: 20
+  playerMoveSharpnessOnGround: 15
+  playerCamera: {fileID: 0}
+  cameraRotationSpeed: 200
 --- !u!1001 &1609050376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2915,7 +2920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887544096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.49, y: -0.41, z: 0.72}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 186328804}
