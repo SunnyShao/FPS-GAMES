@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7763874475280040788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765959816010599873}
-  m_LocalRotation: {x: 0.026656415, y: -0.7066042, z: -0.7066042, w: -0.026656415}
-  m_LocalPosition: {x: 8.84, y: 0.85, z: 7.22}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3483393481107259761}
   m_Father: {fileID: 5044510129467985920}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: -180, z: -4.320984}
+  m_LocalEulerAnglesHint: {x: -90, y: -180, z: 0}
 --- !u!1 &6017619857801951600
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,8 +40,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5044510129467985920}
-  m_Layer: 0
-  m_Name: Weapon
+  - component: {fileID: 5947043347756709475}
+  m_Layer: 6
+  m_Name: Weapon_Blaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,6 +63,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5947043347756709475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017619857801951600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325720a53a6cf4842aa48a829535c0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeaponRoot: {fileID: 1765959816010599873}
+  owner: {fileID: 0}
+  sourcePerfab: {fileID: 0}
 --- !u!1001 &2974293962977630543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,6 +88,10 @@ PrefabInstance:
     - target: {fileID: 1322510036410417796, guid: c1a036c1b5fa75e4181d2d6c2f1c25f4, type: 3}
       propertyPath: m_Name
       value: sci-fi-rifle-gun2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322510036410417796, guid: c1a036c1b5fa75e4181d2d6c2f1c25f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1806417836668721214, guid: c1a036c1b5fa75e4181d2d6c2f1c25f4, type: 3}
       propertyPath: m_RootOrder
