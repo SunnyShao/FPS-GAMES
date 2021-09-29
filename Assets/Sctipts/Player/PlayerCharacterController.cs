@@ -50,7 +50,7 @@ public class PlayerCharacterController : MonoBehaviour
     private void HandleCharacterMovement()
     {
         //为什么控制鼠标左右移动的时候，这里用 transform.Rotate 而不是 playerCamera.transform.Rotate？ 如果这里控制了相机的旋转，那么和相机同级的角色什么的物体会暴露出来(比如枪械之类的)
-        transform.Rotate(new Vector3(0f, PlayerInputHandle._instance.GetMouseLookHorizontalAxis() * cameraRotationSpeed, 0f));
+        transform.Rotate(new Vector3(0f, PlayerInputHandle._instance.GetMouseLookHorizontalAxis() * cameraRotationSpeed, 0f), Space.Self);
         //控制相机上下移动
         cameraVerticalAngle += PlayerInputHandle._instance.GetMouseLookVerticalAxis() * cameraRotationSpeed;
         cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -89f, 89f);
