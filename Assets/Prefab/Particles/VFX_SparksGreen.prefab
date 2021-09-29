@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7655095426451682928}
   - component: {fileID: 7655095426451682943}
   m_Layer: 0
-  m_Name: VFX_LazerSparksGreen
+  m_Name: VFX_SparksGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
