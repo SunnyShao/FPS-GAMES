@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInputHandle : MonoBehaviour
@@ -35,5 +33,11 @@ public class PlayerInputHandle : MonoBehaviour
     private float GetMouseLookAxis(string mouseInputName)
     {
         return Input.GetAxis(mouseInputName) * lookSensitivity * 0.05f;
+    }
+
+    //检测是否按下开火键
+    public bool GetFire()
+    {
+        return Input.GetButton("Fire");
     }
 } 

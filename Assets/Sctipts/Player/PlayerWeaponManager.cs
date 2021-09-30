@@ -27,6 +27,12 @@ public class PlayerWeaponManager : MonoBehaviour
         SwitchWeapon();
     }
 
+    private void Update()
+    {
+        WeaponController curWeapon = m_WeaponSlots[0]; //临时写为0，取得第一把武器 TODO
+        curWeapon.HandleShootInputs(PlayerInputHandle._instance.GetFire());
+    }
+
     private void InitWeaponList()
     {
         foreach (WeaponController item in StartingWeapons)
